@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre os professores</title>
+    <style>
+        #interface{text-align:center}
+        h1 {
+            color: darkred;
+        }
+    </style>
+</head>
+<div id="interface">
+    <h1>PROFESSORES</h1>
+</div>
+
+    <table border="1" align="center" bgcolor="white">
+        <tr>
+            <td>professor
+            <td>nome</td>
+            <td>nomemae</td>
+            <td>titulacao</td>
+            <td>datanasc</td>
+
+        </tr>
+        {% for disciplina in disciplinas %}
+            <tr>
+                <td><a href="/sobre/{{professor[0]}}">{{professor[0]}}</a></td>
+                <td>{{nomemae[0]}}</td>
+                <td>{{datanasc[0]}}</td>
+                <td>{{idtitulacao[0]}}</td>
+            </tr>
+        {% endfor %}
+
+    </table>
+</body>
+</html>
